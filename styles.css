@@ -45,32 +45,15 @@ header {
   width: 100%;
   color: var(--text);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   text-transform: uppercase;
-  position: fixed;
   background-color: red;
 }
 
-#header-nav {
-  /* background-color: red; */
+header nav {
   font-size: 1rem;
-
-  /* margin-top: auto; */
-  /* margin-bottom: auto; */
   margin-left: auto;
-  /* margin-right: 16px; */
-}
-
-#header-title {
-  background-color: white;
-}
-
-header h1 {
-  /* margin-left: 160px;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 2rem; */
 }
 
 header ul li {
@@ -82,14 +65,41 @@ header ul li {
 /* MAIN */
 
 main {
-  background-color: blue;
+  background-color: black;
   width: 100%;
   padding: 16px;
-  height: 100%;
+  margin: 16px auto;
+  color: var(--text);
 }
 
-.section {
-  background-color: white;
-  height: 10px;
-  width: 10px;
+section {
+  /* background-color: white; */
+}
+
+/* STYLE PROJECTS */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 32px;
+}
+
+.project {
+  background-color: green;
+  padding: 16px;
+  margin: 32px;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.project h3 {
+  font-size: 2rem;
+}
+
+.project ul li {
+  display: inline;
 }
