@@ -1,5 +1,14 @@
 [
   {
+    "name": "Slam Stats",
+    "description": "Data Science driven college basketball predictor",
+    "url": "https://example.com",
+    "git_url": "https://github.com/seelosjames/",
+    "img_url": "website.PNG",
+    "skills": ["Python", "Javascript", "HTML"],
+    "date": "2023-07-15"
+  },
+  {
     "name": "Secure File Encryption System",
     "description": "A system that encrypts files using advanced encryption algorithms to ensure data security.",
     "url": "https://example.com/secure-file-encryption",
@@ -39,8 +48,8 @@
     "name": "Data Visualization Dashboard",
     "description": "A dashboard application that visualizes complex data sets using interactive charts, graphs, and maps.",
     "url": "https://example.com/data-visualization",
-    "img_url": "website.PNG",
     "git_url": "https://github.com/username/data-visualization",
+    "img_url": "website.PNG",
     "skills": ["Data Visualization", "Web Development", "JavaScript", "D3.js"],
     "date": "2024-04-18"
   }

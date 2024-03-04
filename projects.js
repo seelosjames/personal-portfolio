@@ -1,7 +1,7 @@
 fetch("projects.json")
   .then((response) => response.json())
   .then((data) => {
-    const projectsContainer = document.getElementById("projects");
+    const projectsContainer = document.getElementById("projects-container");
 
     data.forEach((project) => {
       const projectElement = document.createElement("div");

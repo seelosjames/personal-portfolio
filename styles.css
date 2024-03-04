@@ -66,35 +66,59 @@ header ul li {
 /* MAIN */
 
 main {
-  /* background-color: black; */
   width: 100%;
-  padding: 16px;
-  margin: 16px auto;
   color: var(--text);
 }
 
-section {
-  /* background-color: white; */
+section h2 {
+  width: fit-content;
+  margin: auto;
+  font-size: 2rem;
 }
 
 /* STYLE PROJECTS */
 
-#projects {
+#projects-slider {
+  /* display: inline; */
+  position: relative;
+  overflow: hidden;
+}
+
+#projects-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 32px;
+  transition: transform 0.5s ease;
+  gap: 50%;
 }
 
 .project {
-  /* background-color: green; */
+  flex: 0 0 auto;
+  width: 75%;
+  margin: 16px auto;
   padding: 16px;
-  margin: 32px;
-  flex-grow: 1;
-
   display: flex;
-  justify-content: flex-start;
-  gap: 10px;
+  gap: 16px;
+  /* border: 3px solid white; */
+  transform: translateX(calc(50% / 3));
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--text);
+  color: var(--background);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 5%;
+}
+
+.next-button {
+  right: 5%;
 }
 
 .project h3 {
@@ -102,7 +126,7 @@ section {
 }
 
 .project img {
-  height: 600px;
+  height: 350px;
   object-fit: contain;
 }
 
