@@ -55,19 +55,19 @@ header {
 header nav {
   font-size: 1rem;
   margin-left: auto;
-  margin-right: 96px;
+  margin-right: 72px;
 }
 
 header ul li {
   display: inline;
-  padding: 48px;
+  padding: 32px;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 header h2 {
-  font-size: 2.5rem;
-  margin-left: 10%;
+  font-size: 3rem;
+  margin-left: 5%;
 }
 
 /* MAIN */
@@ -91,8 +91,15 @@ section h2 {
 
 #intro h1 {
   font-size: 3rem;
-  margin: 16px auto;
   width: fit-content;
+  padding-left: 200px;
+  padding-right: auto;
+  padding-top: 200px;
+}
+
+#intro p {
+  padding-left: 200px;
+  font-size: 1.1rem;
 }
 
 /* ABOUT */
@@ -170,3 +177,8 @@ section h2 {
 }
 
 /* FOOTER */
+
+footer {
+  height: 25vh;
+  color: var(--text);
+}
