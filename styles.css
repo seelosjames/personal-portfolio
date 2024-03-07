@@ -51,7 +51,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
-  position: fixed;
+  /* position: fixed; */
 }
 
 header nav {
@@ -103,11 +103,25 @@ section h2 {
 }
 
 #intro-content {
-  transform: translate(-50px, -150px);
+  /* transform: translate(-50px, -150px); */
 }
 
 #resume {
   margin-top: 48px;
+}
+
+#headshot-container {
+  position: relative;
+}
+#headshot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  /* background-color: white; */
+  /* border: 3px solid white; */
+  border-radius: 100%;
 }
 
 #projects-button {
