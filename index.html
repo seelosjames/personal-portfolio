@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>James Seelos</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,12 +33,45 @@
         <!-- <p>Click here to</p> -->
         <div id="headshot-container">
           <div class="gooey"></div>
-          <img id="headshot" src="headshot.PNG" alt="headshot">
+          <img id="headshot" src="headshot.PNG" alt="headshot" />
         </div>
       </section>
       <section id="about">
-        <h2>About</h2>
-        <div></div>
+        <div class="left-div">
+          <div class="carousel">
+            <button class="carousel-button prev" data-carousel-button>&#8656;</button>
+            <button class="carousel-button next" data-carousel-button>&#8658;</button>
+            <ul>
+              <li class="slide" data-active><img src="https://source.unsplash.com/JdWb4SnEq3U" /></li>
+              <li class="slide"><img src="https://source.unsplash.com/JwoljlS6SsA" /></li>
+              <li class="slide"><img src="https://source.unsplash.com/NmPpLZ_qxdM" /></li>
+              <li class="slide"><img src="https://source.unsplash.com/CuGwp9Bdtl4" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-div">
+          <h2>About Me</h2>
+          <p>
+            Hello there! I'm [Your Name], a proud graduate of Utah State University, where I earned my Bachelor's degree
+            in Computer Science alongside a minor in Business. Nestled in the heart of Salt Lake City, I'm fueled by a
+            passion for all things tech-related.
+          </p>
+          <p>
+            My journey in the realm of computer science extends far beyond the classroom. In my spare time, I immerse
+            myself in a variety of projects, constantly seeking opportunities to expand my knowledge and skills. Whether
+            it's experimenting with new programming languages, delving into software development, or exploring the
+            latest trends in technology, I'm always eager to push the boundaries of what's possible.
+          </p>
+          <p>
+            Driven by a desire to innovate and create, I approach each project with enthusiasm and determination. From
+            conceptualization to execution, I thrive on the challenges that come with bringing ideas to life in the
+            digital world.
+          </p>
+          <p>
+            Join me on this exciting adventure as we navigate the ever-evolving landscape of computer science together.
+            Together, let's harness the power of technology to shape a brighter, more connected future.
+          </p>
+        </div>
       </section>
       <section id="projects">
         <h2>Projects</h2>
