@@ -33,8 +33,102 @@ h5 {
 }
 
 body {
-  background-color: var(--primary);
+  height: 100%;
+}
+
+main {
+  /* padding-bottom: 10vh; */
+}
+
+section {
   height: 100vh;
 }
 
+/* HEADER */
+
+header {
+  padding: 32px;
+  width: 100%;
+  height: 10vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  position: fixed;
+}
+
+header nav {
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: 72px;
+}
+
+header ul li {
+  display: inline;
+  padding: 32px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+header h2 {
+  font-size: 3rem;
+  margin-left: 5%;
+}
+
+/* HOME */
+
+#home {
+  background-color: var(--black);
+}
+
+/* ABOUT-1 */
+
+#about-1 {
+  background-color: var(--white);
+}
+
+/* ABOUT-2 */
+
+#about-2 {
+  background-color: var(--secondary);
+}
+
+/* ABOUT-3 */
+
+#about-3 {
+  background-color: var(--accent);
+}
+
 /* PROJECTS */
+
+#projects {
+  background-color: var(--primary);
+}
+
+/* CONTACT */
+
+#contact {
+  background-color: var(--black);
+}
+
+/* FOOTER */
+
+footer {
+  height: 10vh;
+  width: 100%;
+  left: 0;
+  /* right: 0; */
+  /* padding: 32px; */
+  position: fixed;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
+
+footer h2 {
+  font-size: 3rem;
+  margin-left: 5%;
+}
