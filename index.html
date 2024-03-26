@@ -3,42 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="projects/projects.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>James Seelos</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <h2>JS</h2>
+      <!-- Nav that will navigate to the main sections of the page -->
       <nav>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#home-nav">Home</a></li>
+          <li><a href="#about-nav">About</a></li>
+          <li><a href="#projects-nav">Projects</a></li>
+          <li><a href="#contact-nav">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <div id="home-nav" class="navigation"></div>
+
+      <!-- HOME -->
       <section id="home">
-        <h1>Hello</h1>
+        <div id="home-container">
+          <h1 id="title">Hello, I'm James Seelos.</h1>
+          <p id="subtitle">I am a Computer Scientist from Salt Lake City, Utah.</p>
+          <p id="resume">Click here to view my Resume</p>
+        </div>
+
+        <div class="headshot-container"></div>
+
+        <!-- <p>Click here to</p> -->
+        <div id="headshot-container">
+          <div class="gooey"></div>
+          <!-- <img id="headshot" src="headshot.PNG" alt="headshot" /> -->
+        </div>
       </section>
+
+      <div id="about-nav" class="navigation"></div>
+
+      <!-- ABOUT -->
       <section id="about">
         <div class="section-header">
           <h2>About</h2>
         </div>
-        <div class="about-flex">
-          <div class="about-div"></div>
-          <div class="about-div"></div>
-          <div class="about-div"></div>
+        <!-- About containers that let use learn more -->
+        <div class="about-content">
+          <div class="about-container"></div>
+          <div class="about-container"></div>
+          <div class="about-container"></div>
         </div>
       </section>
-      <section id="projects"></section>
-      <section id="contact"></section>
+
+      <div id="projects-nav" class="navigation"></div>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="section-header">
+          <h2>Projects</h2>
+        </div>
+      </section>
+
+      <div id="contact-nav" class="navigation"></div>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+        </div>
+      </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-      <h2>Hi</h2>
+      <div class="third-div"></div>
+      <!-- Div that contains the social media icons -->
+      <div id="icon-container" class="third-div">
+        <a href="https://github.com/seelosjames" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/seelosjames/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/JamesSeelos" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/seelosjames/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/seelosjames" target="_blank" class="fa fa-facebook"></a>
+      </div>
+      <div class="third-div"></div>
     </footer>
   </body>
 </html>
