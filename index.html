@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header id="header" class="transparent">
       <h2>JS</h2>
       <!-- Nav that will navigate to the main sections of the page -->
       <nav>
@@ -22,6 +22,22 @@
       </nav>
     </header>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var header = document.getElementById("header");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            header.classList.add("white-bg");
+            header.classList.remove("transparent");
+          } else {
+            header.classList.add("transparent");
+            header.classList.remove("white-bg");
+          }
+        });
+      });
+    </script>
+
     <main>
       <div id="home-nav" class="navigation"></div>
 
@@ -30,16 +46,9 @@
         <div id="home-container">
           <h1 id="title">Hello, I'm James Seelos.</h1>
           <p id="subtitle">I am a Computer Scientist from Salt Lake City, Utah.</p>
-          <p id="resume">Click here to view my Resume</p>
+          <!-- <p id="resume">Click here to view my Resume</p> -->
         </div>
 
-        <div class="headshot-container"></div>
-
-        <!-- <p>Click here to</p> -->
-        <div id="headshot-container">
-          <div class="gooey"></div>
-          <!-- <img id="headshot" src="headshot.PNG" alt="headshot" /> -->
-        </div>
       </section>
 
       <div id="about-nav" class="navigation"></div>
@@ -51,9 +60,9 @@
         </div>
         <!-- About containers that let use learn more -->
         <div class="about-content">
+          <!-- <div class="about-container"></div>
           <div class="about-container"></div>
-          <div class="about-container"></div>
-          <div class="about-container"></div>
+          <div class="about-container"></div> -->
         </div>
       </section>
 

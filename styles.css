@@ -19,11 +19,11 @@ h5 {
 /* BODY */
 
 :root {
-  --text: #070a04;
-  --background: #f6f9f1;
-  --primary: #12150d;
-  --secondary: #9fd198;
-  --accent: #7fc683;
+  --text: #121417;
+  --background: #fcfcfd;
+  --primary: #18326d;
+  --secondary: #b9abbc;
+  --accent: #ac96a8;
 }
 
 * {
@@ -40,7 +40,7 @@ body {
 section {
   height: 90vh;
   padding: 16px;
-  border: 1px solid #070a04;
+  /* border: 1px solid #070a04; */
   background-color: var(--background);
   display: flex;
   flex-direction: column;
@@ -70,16 +70,17 @@ header {
   padding: 32px;
   width: 100%;
   height: 10vh;
-  color: var(--text);
-  background-color: var(--background);
-  border-bottom: 2px solid #070a0444;
+  color: var(--background);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
-  position: sticky;
+  position: fixed;
+  z-index: 1000;
   top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
 }
 
 header nav {
@@ -101,46 +102,53 @@ header h2 {
   margin-left: 5%;
 }
 
+header a {
+  transition: background-color 0.3s ease;
+}
+
 header a:visited,
 header a:active,
 header a:link,
 header a:hover {
   text-decoration: none;
-  color: var(--text);
+  color: var(--background);
 }
 
 header a:hover {
   opacity: 70%;
 }
 
+.transparent {
+  background: transparent !important;
+}
+
+.white-bg {
+  background-color: var(--background) !important;
+  border-bottom: 1px solid #070a0444;
+}
+
 /* HOME */
 
 #home {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  background: radial-gradient(ellipse at 85% 50%, var(--background) -70%, var(--primary) 80%);
+  height: 100vh;
 }
 
 #home h1 {
   font-size: 3rem;
+  color: var(--background);
+  padding: 16px;
 }
 
 #home p {
   font-size: 1.1rem;
+  color: var(--background);
+  padding: 16px;
 }
 
-#headshot-container {
-  position: relative;
-}
-#headshot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 600px;
-  /* background-color: white; */
-  /* border: 3px solid white; */
-  border-radius: 100%;
+#home-container {
+  margin-left: 10vw;
+  margin-top: 25vh;
 }
 
 /* ABOUT */
@@ -170,6 +178,7 @@ header a:hover {
 /* CONTACT */
 
 #contact {
+  height: 80vh;
 }
 
 /* FOOTER */
